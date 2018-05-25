@@ -13,8 +13,14 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testUserNameExists()
     {
-        $this->assertTrue(true);
+        //$this->assertTrue(true);
+        $this->assertDatabaseHas('users', ['name' => 'bruno']);
+    }
+    public function testUserEmailExists()
+    {
+        //$this->assertTrue(true);
+        $this->assertDatabaseHas('users', ['email' => 'delattreb@gmail.com']);
     }
 }
