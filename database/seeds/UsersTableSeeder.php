@@ -14,8 +14,13 @@ class UsersTableSeeder extends Seeder
         //create fake Users
         DB::table('users')->insert([
             'name' => 'bruno',
-            'email'=>'delattreb@gmail.com',
-            'password'=>bcrypt('0000')
-            ]);
+            'email' => 'delattreb@gmail.com',
+            'password' => bcrypt('0000')
+        ]);
+        DB::table('users')->insert([
+            'name' => 'celine',
+            'email' => 'celdelattre@gmail.com',
+            'password' => bcrypt('0000')
+        ]);
     }
 }
